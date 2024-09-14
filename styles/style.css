@@ -1,5 +1,6 @@
 :root {
     --color-blue: #1992D4;
+    --color-blue-hover: #0f7db8;
     --color-yellow: #F0B429;
     --color-main-bg: #E2E8F0;
     --color-grey: #828181;
@@ -108,6 +109,10 @@ button {
     background-color: var(--color-blue);
 }
 
+button:hover {
+    background-color: var(--color-blue-hover);
+}
+
 /* Sidebar */
 
 aside {
@@ -142,6 +147,10 @@ aside .icon {
 
 .nav-list-item {
     display: flex;
+}
+
+.nav-list-item a:hover {
+    background-color: var(--color-blue-hover);
 }
 
 /* Main */
