@@ -1,8 +1,13 @@
+:root {
+    --color-blue: #1992D4;
+}
+
 body {
     min-height: 100svh;
     font-family: system-ui, sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 header {
@@ -10,11 +15,48 @@ header {
 }
 
 aside {
-    background: darkblue;
-    grid-row: 1 / -3;
+    background: var(--color-blue);
+    grid-row: 1 / -1;
+    color: white;
+    font-weight: bold;
+}
+
+aside a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
 }
 
 main {
     background: darkkhaki;
     grid-column: 2;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    background-color: aliceblue;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list-item {
+    display: flex;
+}
+
+.m-top {
+    margin-top: 2rem;
 }
